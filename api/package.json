@@ -1,0 +1,32 @@
+{
+  "name": "accountkit-server",
+  "version": "0.1.0",
+  "description": "Account Kit Server Verification Example Using ExpressJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start:debug": "DEBUG=accountkit:* nodemon start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Dinar",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "csrf": "^3.0.6",
+    "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-winston": "^3.1.0",
+    "helmet": "^3.15.1",
+    "joi": "^14.3.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.9.1",
+    "qs": "^6.6.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "winston": "^3.2.1"
+  }
+}
