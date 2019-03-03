@@ -5,10 +5,7 @@
         <span>Accountkit</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="/login"
-      >
+      <v-btn flat to="/login">
         <span class="mr-2">Login</span>
       </v-btn>
     </v-toolbar>

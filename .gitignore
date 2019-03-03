@@ -54,3 +54,5 @@ node_modules
 _build
 
 images
+
+package-lock.*

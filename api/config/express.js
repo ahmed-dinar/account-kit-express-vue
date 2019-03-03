@@ -42,6 +42,8 @@ if (config.env === 'development') {
   }));
 }
 
+app.use('/client', express.static('dist'));
+
 app.get('/api/otp/session', (req, res) => {
   const tokens = new Tokens();
   const secret = tokens.secretSync();
