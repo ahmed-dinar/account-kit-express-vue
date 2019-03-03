@@ -42,7 +42,7 @@ export default {
     }
   },
   methods: {
-    AccountKit_OnInteractive() {
+    OnInteractive() {
       AccountKit.init(this.creds);
     },
     loginCallback(response) {
@@ -84,7 +84,7 @@ export default {
     async getSession() {
       try {
         const response = await this.$http.get(`/api/otp/session`);
-        console.log('response: ', response);
+        console.log('response is: ', response);
         this.creds.state = response.data.csrf;
         this.creds.appId = response.data.appId;
         this.creds.version = response.data.version;
@@ -96,13 +96,12 @@ export default {
         this.snackbar.text = err.response;
       }
     },
-    async loadAccountkitApi() {
+    loadAccountkitApi() {
       const accountkitScript = document.createElement('script');
       accountkitScript.setAttribute('src',`https://sdk.accountkit.com/en_US/sdk.js`);
-      accountkitScript.setAttribute('async', '');
       accountkitScript.onload = () => {
-        console.log('accountkit loaded');
-        window.AccountKit_OnInteractive = this.AccountKit_OnInteractive;
+        console.log('accountkit loaded: ');
+        window.AccountKit_OnInteractive = this.OnInteractive;
       };
       document.head.appendChild(accountkitScript);
     }
