@@ -2,11 +2,26 @@
 echo "changing directory to client.."
 cd client
 
-echo "installing npm packgaes.."
-npm install
+echo "node version: "
+node --version
 
-echo "explore cli service.."
-npm explore @vue/cli-service
+echo "npm version: "
+npm --version
+
+echo "install @vue/cli.."
+npm install -g @vue/cli
+
+echo "vue version: "
+vue --version
+
+echo "install @vue/cli-service.."
+npm install -g @vue/cli-service
+
+echo "install @vue/cli-service-global.."
+npm install -g @vue/cli-service-global
+
+echo "install npm packgaes.."
+npm install
 
 echo "building..."
 npm run build
