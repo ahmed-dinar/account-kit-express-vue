@@ -88,6 +88,7 @@ export default {
         this.creds.state = response.data.csrf;
         this.creds.appId = response.data.appId;
         this.creds.version = response.data.version;
+        this.loadAccountkitApi();
       }
       catch (err) {
         console.log(err);
@@ -102,13 +103,12 @@ export default {
       accountkitScript.onload = () => {
         console.log('accountkit loaded');
         window.AccountKit_OnInteractive = this.AccountKit_OnInteractive;
-        this.getSession();
       };
       document.head.appendChild(accountkitScript);
     }
   },
   mounted() {
-    this.loadAccountkitApi();
+    this.getSession();
   }
 }
 </script>
