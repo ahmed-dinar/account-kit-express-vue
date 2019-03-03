@@ -42,7 +42,7 @@ if (config.env === 'development') {
   }));
 }
 
-app.use('/client', express.static('dist'));
+app.use('/client', express.static('client'));
 
 app.get('/api/otp/session', (req, res) => {
   const tokens = new Tokens();

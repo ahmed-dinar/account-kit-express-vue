@@ -84,6 +84,7 @@ export default {
     async getSession() {
       try {
         const response = await this.$http.get(`/api/otp/session`);
+        console.log('response: ', response);
         this.creds.state = response.data.csrf;
         this.creds.appId = response.data.appId;
         this.creds.version = response.data.version;

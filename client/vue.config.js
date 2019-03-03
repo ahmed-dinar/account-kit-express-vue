@@ -4,6 +4,6 @@ module.exports = {
     : '/',
   
   outputDir: process.env.NODE_ENV === 'production'
-    ? '../api/dist/'
-    : '/'
+    ? '../api/client/'
+    : '/dist'
 }
