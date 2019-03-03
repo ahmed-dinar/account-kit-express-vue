@@ -2,6 +2,8 @@
 
 > ## A shorter version of this example can be found [HERE](https://gist.github.com/ahmed-dinar/5a135b9e5dc0817c5bdda5e3e687d048)
 
+## [Live Demo](https://accountkit-express.herokuapp.com/client/)
+
 You can clone or download the project to run and test in your server / pc.
 Make sure there is a ``.env`` file in both ``/api`` and ``/client`` folder
 
