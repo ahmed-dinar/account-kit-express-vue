@@ -14,11 +14,8 @@ npm install -g @vue/cli
 echo "vue version: "
 vue --version
 
-echo "install @vue/cli-service.."
-npm install -g @vue/cli-service
-
-echo "install @vue/cli-service-global.."
-npm install -g @vue/cli-service-global
+echo "install globals.."
+npm install -g @vue/cli-service @vue/cli-service-global @vue/cli-plugin-babel @vue/cli-plugin-eslint babel-eslint babel-eslint eslint eslint-plugin-vue stylus stylus-loader vue-cli-plugin-vuetify vue-template-compiler vuetify-loader
 
 echo "install npm packgaes.."
 npm install
